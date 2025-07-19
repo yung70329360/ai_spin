@@ -13,60 +13,78 @@
     -moz-osx-font-smoothing: grayscale;
     background-color: #f8fafc; /* bg-slate-50 */
     color: #1e293b; /* text-slate-800 */
+    /* Safari 兼容性修復 */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
   
   /* Typography Unification */
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.5;
+    /* Safari 字體渲染優化 */
+    -webkit-font-feature-settings: "liga" 1, "kern" 1;
+    font-feature-settings: "liga" 1, "kern" 1;
   }
   
   p, li, td, blockquote {
     line-height: 1.8; 
     font-size: 1.125rem; /* 18px, unified size */
+    /* Safari 文字渲染優化 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Safari Flexbox 修復 */
+  .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  /* Safari Grid 修復 */
+  .grid {
+    display: -webkit-box;
+    display: -webkit-grid;
+    display: -ms-grid;
+    display: grid;
+  }
+  
+  /* Safari Transform 修復 */
+  .transform {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
   }
 }
 
 /* Component Styles */
 @layer components {
   .section-header {
-    font-size: 1.875rem; /* 30px */
+    font-size: 2.5rem;
     font-weight: 800;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: #0f172a; /* text-slate-900 */
     letter-spacing: 0.025em;
+    /* Safari 字體渲染修復 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-feature-settings: "liga" 1, "kern" 1;
+    font-feature-settings: "liga" 1, "kern" 1;
   }
   
   .section-subheader {
-    font-size: 1.125rem; /* 18px */
+    font-size: 1.25rem;
     text-align: center;
     color: #475569; /* text-slate-600 */
     max-width: 48rem;
-    margin: 0 auto 2rem auto;
-  }
-  
-  @media (min-width: 640px) {
-    .section-header {
-      font-size: 2.25rem; /* 36px */
-      margin-bottom: 1.25rem;
-    }
-    
-    .section-subheader {
-      font-size: 1.25rem; /* 20px */
-      margin: 0 auto 2.5rem auto;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .section-header {
-      font-size: 2.5rem; /* 40px */
-      margin-bottom: 1.5rem;
-    }
-    
-    .section-subheader {
-      font-size: 1.25rem; /* 20px */
-      margin: 0 auto 3rem auto;
-    }
+    margin: 0 auto 3rem auto;
+    /* Safari 字體渲染修復 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   
   .accent-gradient-text {
@@ -83,12 +101,21 @@
   
   .fade-in-section {
     opacity: 0;
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
     transform: translateY(30px);
+    -webkit-transition: opacity 0.8s ease-out, -webkit-transform 0.8s ease-out;
+    -moz-transition: opacity 0.8s ease-out, -moz-transform 0.8s ease-out;
+    -ms-transition: opacity 0.8s ease-out, -ms-transform 0.8s ease-out;
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   }
   
   .fade-in-section.is-visible {
     opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
     transform: translateY(0);
   }
   
@@ -96,19 +123,19 @@
     background-color: #ffffff;
     border: 1px solid #e2e8f0; /* border-slate-200 */
     border-radius: 0.75rem;
-    padding: 1.5rem;
+    padding: 2rem;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
     height: 100%;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
   }
   
-  @media (min-width: 640px) {
-    .content-card {
-      padding: 2rem;
-    }
-  }
-  
   .content-card:hover {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
     transform: translateY(-5px);
     border-color: #0891b2; /* border-cyan-600 */
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.07), 0 4px 6px -4px rgb(0 0 0 / 0.07);
@@ -122,47 +149,27 @@
     overflow: hidden;
     border: 1px solid #e2e8f0;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+    /* Safari 表格修復 */
+    table-layout: fixed;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
   
   .custom-table th, .custom-table td {
-    padding: 0.5rem 0.75rem;
+    padding: 1rem 1.5rem;
     text-align: left;
     border-bottom: 1px solid #e2e8f0;
-    font-size: 0.75rem; /* 12px */
-    line-height: 1.4;
   }
   
   .custom-table th {
     background-color: #f1f5f9; /* bg-slate-100 */
     font-weight: 600;
     color: #0f172a;
-    font-size: 0.875rem; /* 14px */
+    font-size: 1.125rem; /* Unified font size */
   }
   
   .custom-table td {
     color: #334155; /* text-slate-700 */
-  }
-  
-  @media (min-width: 640px) {
-    .custom-table th, .custom-table td {
-      padding: 0.75rem 1rem;
-      font-size: 0.875rem; /* 14px */
-    }
-    
-    .custom-table th {
-      font-size: 1rem; /* 16px */
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .custom-table th, .custom-table td {
-      padding: 1rem 1.5rem;
-      font-size: 1rem; /* 16px */
-    }
-    
-    .custom-table th {
-      font-size: 1.125rem; /* 18px */
-    }
   }
   
   .custom-table tbody tr:last-child td {
@@ -188,6 +195,9 @@
   
   /* Syllabus specific styles */
   .syllabus-tab {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
   
@@ -207,6 +217,10 @@
     padding: 1rem 0 1rem 2rem; /* space for icon and padding */
     margin-bottom: 0;
     border-bottom: 1px solid #e2e8f0; /* slate-200 notebook line */
+    /* Safari 列表項修復 */
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
   }
   
   .syllabus-content li:last-child {
@@ -226,18 +240,23 @@
   .pain-gain-card {
     background-color: #ffffff;
     border-radius: 0.75rem;
-    padding: 1rem;
+    padding: 1.5rem;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
     border: 1px solid #e2e8f0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: left;
-  }
-  
-  @media (min-width: 640px) {
-    .pain-gain-card {
-      padding: 1.5rem;
-    }
+    /* Safari 高度修復 */
+    min-height: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
   
   /* Keyword Cloud Styles */
@@ -259,6 +278,9 @@
     color: rgba(200, 220, 255, 0.6);
     font-weight: 600;
     pointer-events: none;
+    -webkit-transition: color 0.3s, text-shadow 0.3s;
+    -moz-transition: color 0.3s, text-shadow 0.3s;
+    -ms-transition: color 0.3s, text-shadow 0.3s;
     transition: color 0.3s, text-shadow 0.3s;
     will-change: transform;
     text-shadow: 0 0 8px rgba(56, 189, 248, 0.5); /* Base glow */

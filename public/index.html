@@ -76,13 +76,13 @@
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24 space-y-16 sm:space-y-20 md:space-y-24 lg:space-y-32">
+    <main class="max-w-7xl mx-auto px-6 py-16 md:py-24 space-y-24 md:space-y-32">
         
         <!-- Why SPIN Section -->
         <section id="why-spin" class="fade-in-section">
-            <div class="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-24 items-start md:items-center">
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
                 <div class="prose-custom max-w-none space-y-6">
-                    <h2 class="text-2xl sm:text-3xl font-bold">為何在當代 B2B 銷售中，<br class="hidden sm:block"><span class="text-cyan-700">SPIN 依然是黃金準則？</span></h2>
+                    <h2 class="text-3xl font-bold">為何在當代 B2B 銷售中，<br><span class="text-cyan-700">SPIN 依然是黃金準則？</span></h2>
                     <p>在客戶比你更懂產品的時代，單向的產品推銷已然失效。銷售的成功關鍵，從「說了什麼」轉變為「問對了什麼」。真正的銷售精英，是客戶眼中能解決問題的顧問。</p>
                     <blockquote>SPIN® Selling 銷售法，正是建立這種顧問式信任關係的基石。它將複雜的銷售對話，解構成四個清晰、科學的提問階段，讓客戶「自我說服」，從而大幅提高大額訂單的成交率。</blockquote>
                 </div>
@@ -135,9 +135,9 @@
                 </div>
             </div>
             <!-- Benefits of SPIN Section -->
-            <div class="mt-12 sm:mt-16 md:mt-20 bg-slate-100 rounded-2xl p-6 sm:p-8 md:p-12">
-                <h3 class="text-xl sm:text-2xl font-bold text-center text-slate-800 mb-8 sm:mb-10">SPIN 銷售法帶來的核心效益</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+            <div class="mt-20 bg-slate-100 rounded-2xl p-8 md:p-12">
+                <h3 class="text-2xl font-bold text-center text-slate-800 mb-10">SPIN 銷售法帶來的核心效益</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="text-center">
                         <div class="flex items-center justify-center h-14 w-14 rounded-full bg-white shadow-md border border-slate-200 mx-auto mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-cyan-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
@@ -174,7 +174,7 @@
         <section id="pain-gain" class="fade-in-section">
             <h2 class="section-header">結合AI，解決您的銷售困境</h2>
             <p class="section-subheader">我們將傳統銷售的四大痛點，轉化為 AI 賦能的四大收益。</p>
-            <div class="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+            <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Card 1 -->
                 <div class="pain-gain-card">
                     <div>
@@ -227,13 +227,13 @@
         </section>
 
         <!-- Framework Section -->
-        <section id="framework" class="fade-in-section bg-slate-800 py-16 sm:py-20 lg:py-24">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <section id="framework" class="fade-in-section bg-slate-800 py-20 sm:py-24">
+            <div class="max-w-7xl mx-auto px-6">
                 <h2 class="section-header text-white">課程設計核心架構｜<span class="accent-gradient-text-dark">SPIN × AI 工具</span></h2>
                 <p class="section-subheader text-slate-300">我們將 SPIN 的四個經典階段，注入對應的 AI 工具，打造一套可複製、高效的銷售作業系統。</p>
-                <div class="mt-8 sm:mt-12" x-data="{ tableId: 'spin-ai-matrix', highlightedRow: 1 }" x-init="setInterval(() => { highlightedRow = (highlightedRow % 4) + 1 }, 3000)">
-                    <div class="overflow-x-auto -mx-4 sm:mx-0">
-                        <table class="w-full border-collapse min-w-[800px] sm:min-w-0" :id="tableId">
+                <div class="mt-12" x-data="{ tableId: 'spin-ai-matrix', highlightedRow: 1 }" x-init="setInterval(() => { highlightedRow = (highlightedRow % 4) + 1 }, 3000)">
+                    <div class="overflow-x-auto">
+                        <table class="w-full border-collapse" :id="tableId">
                             <thead>
                                 <tr>
                                     <th class="p-4 text-left font-semibold text-white border-b border-slate-600">SPIN 銷售階段</th>
@@ -272,9 +272,9 @@
                     </div>
                 </div>
                 <!-- Logo Wall Section -->
-                <div class="mt-8 sm:mt-12 rounded-lg bg-slate-900/70 p-6 sm:p-8">
-                    <h3 class="text-center text-base sm:text-lg font-semibold text-slate-200 mb-6 sm:mb-8">課程涵蓋的重點 AI 工具</h3>
-                    <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-x-12 gap-y-6 sm:gap-y-8">
+                <div class="mt-12 rounded-lg bg-slate-900/70 p-8">
+                    <h3 class="text-center text-lg font-semibold text-slate-200 mb-8">課程涵蓋的重點 AI 工具</h3>
+                    <div class="flex flex-wrap items-center justify-center gap-x-12 gap-y-8">
                         <img class="h-8 transition duration-300" src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT Logo">
                         <img class="h-8 transition duration-300" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Perplexity_AI_logo.svg" alt="Perplexity AI Logo">
                         <img class="h-7 transition duration-300" src="https://img.icons8.com/?size=512&id=GEwnpUHOxl4r&format=png" alt="Otter.ai Logo">
@@ -284,7 +284,7 @@
                     </div>
                 </div>
                  <!-- AI Tools Application Section -->
-                <div class="mt-12 sm:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="bg-slate-800 border border-slate-700 rounded-lg p-8 text-center transition hover:border-cyan-500 hover:-translate-y-1">
                         <img class="h-12 mx-auto mb-4" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Perplexity_AI_logo.svg" alt="Perplexity Logo">
                         <h4 class="font-bold text-lg text-white">Perplexity</h4>
@@ -305,15 +305,15 @@
         </section>
 
         <section id="teaching-method" class="fade-in-section">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="max-w-7xl mx-auto px-6">
                 <h2 class="section-header">讓AI成為銷售人員的利器</h2>
                 <p class="section-subheader">三大教學基石，四大關鍵成果，每位學員都將帶著可立即應用的AI實戰武器離開。</p>
-                <div class="mt-8 sm:mt-12 bg-slate-100 p-6 sm:p-8 md:p-12 rounded-2xl">
+                <div class="mt-12 bg-slate-100 p-8 md:p-12 rounded-2xl">
                     <!-- Step 1: Principles -->
-                    <div class="text-center mb-8 sm:mb-12">
-                         <h3 class="text-xl sm:text-2xl font-bold text-slate-800">三大教學基石</h3>
+                    <div class="text-center mb-12">
+                         <h3 class="text-2xl font-bold text-slate-800">三大教學基石</h3>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 text-center">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                         <div class="flex flex-col items-center">
                             <div class="flex items-center justify-center h-16 w-16 rounded-full bg-white shadow-md border border-slate-200 mb-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-cyan-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
@@ -338,16 +338,16 @@
                     </div>
 
                     <!-- Arrow Connector -->
-                    <div class="my-8 sm:my-12 flex justify-center">
-                        <svg class="w-8 h-8 sm:w-12 sm:h-12 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
+                    <div class="my-12 flex justify-center">
+                        <svg class="w-12 h-12 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
                     </div>
 
                     <!-- Step 2: Outputs -->
-                    <div class="text-center mb-8 sm:mb-12">
-                         <h3 class="text-xl sm:text-2xl font-bold text-slate-800">四大教學成果</h3>
+                    <div class="text-center mb-12">
+                         <h3 class="text-2xl font-bold text-slate-800">四大教學成果</h3>
                     </div>
-                    <div class="overflow-x-auto -mx-4 sm:mx-0">
-                        <table class="custom-table min-w-[800px] sm:min-w-0">
+                    <div class="overflow-x-auto">
+                        <table class="custom-table">
                             <thead>
                                 <tr>
                                     <th>階段</th>
@@ -368,84 +368,13 @@
         </section>
 
         <section id="syllabus" class="fade-in-section">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="max-w-7xl mx-auto px-6">
                 <h2 class="section-header">課程大綱：從理論到<span class="accent-gradient-text">實戰輸出</span>的完整路徑</h2>
                 <p class="section-subheader">本課程採模組化設計，確保理論與實戰緊密結合，每一單元皆有明確的「實戰輸出」。</p>
-                <div class="mt-8 sm:mt-12" x-data="{ activeTab: 1 }">
-                    <!-- Mobile: Stack layout -->
-                    <div class="block lg:hidden space-y-6">
-                        <!-- Mobile Tabs -->
-                        <div class="flex flex-col space-y-2">
-                            <button @click="activeTab = 1" :class="{ 'active': activeTab === 1, 'bg-slate-100': activeTab !== 1 }" class="syllabus-tab w-full text-left p-4 rounded-lg font-semibold text-slate-600 text-base border border-slate-200">模組一：S - 認識客戶</button>
-                            <button @click="activeTab = 2" :class="{ 'active': activeTab === 2, 'bg-slate-100': activeTab !== 2 }" class="syllabus-tab w-full text-left p-4 rounded-lg font-semibold text-slate-600 text-base border border-slate-200">模組二：P - 找出問題</button>
-                            <button @click="activeTab = 3" :class="{ 'active': activeTab === 3, 'bg-slate-100': activeTab !== 3 }" class="syllabus-tab w-full text-left p-4 rounded-lg font-semibold text-slate-600 text-base border border-slate-200">模組三：I - 放大後果</button>
-                            <button @click="activeTab = 4" :class="{ 'active': activeTab === 4, 'bg-slate-100': activeTab !== 4 }" class="syllabus-tab w-full text-left p-4 rounded-lg font-semibold text-slate-600 text-base border border-slate-200">模組四：N - 說明好處</button>
-                            <button @click="activeTab = 5" :class="{ 'active': activeTab === 5, 'bg-slate-100': activeTab !== 5 }" class="syllabus-tab w-full text-left p-4 rounded-lg font-semibold text-slate-600 text-base border border-slate-200">模組五：整合實作演練</button>
-                        </div>
-                        
-                        <!-- Mobile Content -->
-                        <div class="content-card syllabus-content">
-                            <!-- Module 1 -->
-                            <div x-show="activeTab === 1" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-4" x-transition:enter-end="opacity-100 transform translate-y-0">
-                                <h3 class="text-xl font-bold text-slate-800 mb-3">模組一：S - 認識客戶：快速搞懂你的客戶</h3>
-                                <p class="text-slate-600 mb-4 text-sm">本模組聚焦於運用 AI 工具，在拜訪前快速建立全面、深入的情境理解，讓每一次提問都建立在數據與洞察之上。</p>
-                                <ul class="space-y-2">
-                                    <li class="text-sm">為什麼提問前要先懂產業？ (用對問題才不白問)</li>
-                                    <li class="text-sm">怎麼用 AI 找出產業現況？ (用 Perplexity 查資料)</li>
-                                    <li class="text-sm">用 ChatGPT 整理客戶背景摘要 (不靠主管，也能快速做功課)</li>
-                                    <li class="text-sm">自製一頁式「客戶備忘錄」 (面談前快速預備，讓你問話更精準)</li>
-                                </ul>
-                            </div>
-                            <!-- Module 2 -->
-                            <div x-show="activeTab === 2" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-4" x-transition:enter-end="opacity-100 transform translate-y-0">
-                                <h3 class="text-xl font-bold text-slate-800 mb-3">模組二：P - 找出問題：把客戶說的話變成交機會</h3>
-                                <p class="text-slate-600 mb-4 text-sm">學員將學習如何透過 AI 分析對話，從中精準挖掘客戶未言明的隱性需求與真實痛點，將每一段對話轉化為有效的成交機會。</p>
-                                <ul class="space-y-2">
-                                    <li class="text-sm">問對問題的 3 個層次 (問題不是問「您需要什麼」)</li>
-                                    <li class="text-sm">錄音轉文字：用 Otter.ai 抓出重點 (不用手抄筆記)</li>
-                                    <li class="text-sm">從逐字稿找痛點、角色重點 (主管 vs 使用者要的不同)</li>
-                                    <li class="text-sm">ChatGPT 幫你想「追問怎麼問」</li>
-                                </ul>
-                            </div>
-                            <!-- Module 3 -->
-                            <div x-show="activeTab === 3" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-4" x-transition:enter-end="opacity-100 transform translate-y-0">
-                                <h3 class="text-xl font-bold text-slate-800 mb-3">模組三：I - 放大後果：讓客戶自己感受到「不改會虧大」</h3>
-                                <p class="text-slate-600 mb-4 text-sm">本章節的核心是將抽象問題轉化為具體的商業風險。我們將利用 AI 工具，協助您量化問題的負面影響，創造客戶非改變不可的急迫感。</p>
-                                <ul class="space-y-2">
-                                    <li class="text-sm">問出「不改的後果」技巧 (讓客戶講出自己有壓力)</li>
-                                    <li class="text-sm">ChatGPT 幫你說出後果、模擬狀況</li>
-                                    <li class="text-sm">用 AI 查「別人出錯的真實案例」當警示牌</li>
-                                    <li class="text-sm">用 Gemini 打造互動式損失試算網站 (客戶自己輸入就看到風險)</li>
-                                    <li class="text-sm">整理好一段說服話術：導入會省下什麼？</li>
-                                </ul>
-                            </div>
-                            <!-- Module 4 -->
-                            <div x-show="activeTab === 4" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-4" x-transition:enter-end="opacity-100 transform translate-y-0">
-                                <h3 class="text-xl font-bold text-slate-800 mb-3">模組四：N - 說明好處：讓對方覺得「你這提案真不錯」</h3>
-                                <p class="text-slate-600 mb-4 text-sm">當客戶意識到問題的嚴重性後，本模組將教您如何運用 AI 快速生成具備說服力的價值提案，讓客戶清楚看見解決方案能帶來的美好回報。</p>
-                                <ul class="space-y-2">
-                                    <li class="text-sm">怎麼問出「對他有好處」的問題 (不是說你很好，而是對方得什麼)</li>
-                                    <li class="text-sm">用 ChatGPT 寫一段價值說明句子</li>
-                                    <li class="text-sm">用 Gamma / Canva 生成一頁式簡報草稿</li>
-                                    <li class="text-sm">做出一份「會讓人想看下去」的提案頁面</li>
-                                </ul>
-                            </div>
-                            <!-- Module 5 -->
-                            <div x-show="activeTab === 5" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform translate-y-4" x-transition:enter-end="opacity-100 transform translate-y-0">
-                                <h3 class="text-xl font-bold text-slate-800 mb-3">模組五：整合實作演練：從對話到成交，一次練完整流程</h3>
-                                <p class="text-slate-600 mb-4 text-sm">這是將所有理論與技能融會貫通的實戰環節。學員將在模擬的商業場景中，完整演練從初步接觸到最終提案的全流程 AI 輔助銷售。</p>
-                                <ul class="space-y-2">
-                                    <li class="text-sm">小組模擬演練：扮演業務角色，實際操作提問、後果試算與價值呈現的全過程。</li>
-                                    <li class="text-sm">成果評比與回饋：針對模擬演練的表現，由講師提供專業點評與個人化指導。</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Desktop: Original layout -->
-                    <div class="hidden lg:grid grid-cols-4 gap-8">
+                <div class="mt-12" x-data="{ activeTab: 1 }">
+                    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
                         <!-- Vertical Tabs -->
-                        <div class="col-span-1 flex flex-col gap-2">
+                        <div class="col-span-1 flex flex-row lg:flex-col gap-2">
                             <button @mouseover="activeTab = 1" :class="{ 'active': activeTab === 1, 'hover:bg-slate-200': activeTab !== 1 }" class="syllabus-tab w-full text-left p-4 rounded-lg font-semibold text-slate-600">模組一：S - 認識客戶</button>
                             <button @mouseover="activeTab = 2" :class="{ 'active': activeTab === 2, 'hover:bg-slate-200': activeTab !== 2 }" class="syllabus-tab w-full text-left p-4 rounded-lg font-semibold text-slate-600">模組二：P - 找出問題</button>
                             <button @mouseover="activeTab = 3" :class="{ 'active': activeTab === 3, 'hover:bg-slate-200': activeTab !== 3 }" class="syllabus-tab w-full text-left p-4 rounded-lg font-semibold text-slate-600">模組三：I - 放大後果</button>
@@ -453,8 +382,8 @@
                             <button @mouseover="activeTab = 5" :class="{ 'active': activeTab === 5, 'hover:bg-slate-200': activeTab !== 5 }" class="syllabus-tab w-full text-left p-4 rounded-lg font-semibold text-slate-600">模組五：整合實作演練</button>
                         </div>
 
-                        <!-- Desktop Tab Content -->
-                        <div class="col-span-3">
+                        <!-- Tab Content -->
+                        <div class="lg:col-span-3">
                             <div class="content-card syllabus-content min-h-[450px]">
                                 <!-- Module 1 -->
                                 <div x-show="activeTab === 1" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform -translate-x-4" x-transition:enter-end="opacity-100 transform translate-x-0">
@@ -561,14 +490,14 @@
         </section>
 
         <section id="contact" class="fade-in-section">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6">
-                <div class="relative py-16 sm:py-20 overflow-hidden bg-slate-800 rounded-2xl">
-                    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-                        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">結語：這不只是學會 AI，而是強化你的<span class="accent-gradient-text">成交影響力</span></h2>
-                        <p class="mt-4 sm:mt-6 max-w-2xl mx-auto text-base sm:text-lg text-slate-300">我們相信業務最強的能力，不是背產品規格，而是能聽出問題、放大後果、說出價值、提出解法。AI 是讓這一切「更有效、更快速、更具說服力」的助力。</p>
-                        <p class="mt-3 sm:mt-4 max-w-2xl mx-auto text-base sm:text-lg text-slate-300">若你正在尋找一門能馬上落地、直接提升業績能力的課程，這將是極具回報的選擇。</p>
-                        <div class="mt-8 sm:mt-10">
-                            <a href="mailto:contact@example.com" class="inline-block bg-white text-cyan-700 font-bold text-base sm:text-lg px-6 sm:px-10 py-4 sm:py-5 rounded-lg shadow-2xl hover:bg-slate-200 transition-all duration-300 transform hover:scale-105">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="relative py-20 overflow-hidden bg-slate-800 rounded-2xl">
+                    <div class="max-w-4xl mx-auto px-6 text-center">
+                        <h2 class="text-3xl font-extrabold text-white">結語：這不只是學會 AI，而是強化你的<span class="accent-gradient-text">成交影響力</span></h2>
+                        <p class="mt-6 max-w-2xl mx-auto text-lg text-slate-300">我們相信業務最強的能力，不是背產品規格，而是能聽出問題、放大後果、說出價值、提出解法。AI 是讓這一切「更有效、更快速、更具說服力」的助力。</p>
+                        <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-300">若你正在尋找一門能馬上落地、直接提升業績能力的課程，這將是極具回報的選擇。</p>
+                        <div class="mt-10">
+                            <a href="mailto:contact@example.com" class="inline-block bg-white text-cyan-700 font-bold text-lg px-10 py-5 rounded-lg shadow-2xl hover:bg-slate-200 transition-all duration-300 transform hover:scale-105">
                                 企業內訓合作詢問
                             </a>
                         </div>
