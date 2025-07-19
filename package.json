@@ -4,9 +4,9 @@
   "description": "AI SPIN 銷售法課程網站",
   "main": "index.html",
   "scripts": {
-    "dev": "npx tailwindcss -i ./input.css -o ./output.css --watch",
-    "build": "npx tailwindcss -i ./input.css -o ./output.css --minify",
-    "serve": "npx http-server . -p 3000 -o"
+    "dev": "npx tailwindcss -i ./input.css -o ./public/output.css --watch",
+    "build": "npx tailwindcss -i ./input.css -o ./public/output.css --minify",
+    "serve": "npx http-server ./public -p 3000 -o"
   },
   "keywords": [
     "sales",

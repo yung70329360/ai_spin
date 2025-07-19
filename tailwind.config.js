@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html"],
+  content: ["./public/*.html"],
   safelist: [
     // 動態加載的 classes
     'hidden',

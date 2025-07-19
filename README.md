@@ -6,11 +6,13 @@
 
 ```
 ai_spin/
-├── index.html          # 主要 HTML 文件
+├── public/             # 靜態文件目錄（Vercel 部署）
+│   ├── index.html      # 主要 HTML 文件
+│   └── output.css      # 編譯後的 CSS 文件
 ├── input.css           # Tailwind CSS 輸入文件
-├── output.css          # 編譯後的 CSS 文件（自動生成）
 ├── tailwind.config.js  # Tailwind 配置文件
 ├── package.json        # 專案依賴和腳本
+├── vercel.json         # Vercel 部署配置
 └── README.md          # 專案說明文件
 ```
 
@@ -58,7 +60,7 @@ npm run build
 
 - **配置文件**: `tailwind.config.js`
 - **輸入文件**: `input.css` - 包含所有自定義樣式和 Tailwind 指令
-- **輸出文件**: `output.css` - 編譯後的 CSS（自動生成）
+- **輸出文件**: `public/output.css` - 編譯後的 CSS（自動生成）
 
 ### 自定義樣式
 
