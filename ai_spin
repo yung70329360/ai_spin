@@ -464,17 +464,17 @@
                  <!-- AI Tools Application Section -->
                 <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="bg-slate-800 border border-slate-700 rounded-lg p-8 text-center transition hover:border-cyan-500 hover:-translate-y-1">
-                        <img class="h-12 mx-auto mb-4" src="https://logowik.com/content/uploads/images/perplexity-ai3886.logowik.com.webp" alt="Perplexity Logo">
+                        <img class="h-12 mx-auto mb-4" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Perplexity_AI_logo.svg" alt="Perplexity Logo">
                         <h4 class="font-bold text-lg text-white">Perplexity</h4>
                         <p class="text-slate-300 text-base mt-2">快速生成客戶背景研究，瞭解產業需求與痛點，大幅提升準備效率與提問深度，精準的擊中顧客的心理。</p>
                     </div>
                     <div class="bg-slate-800 border border-slate-700 rounded-lg p-8 text-center transition hover:border-cyan-500 hover:-translate-y-1">
-                        <img class="h-12 mx-auto mb-4" src="https://seeklogo.com/images/O/otter-ai-logo-485F65525D-seeklogo.com.png" alt="Otter.ai Logo">
+                        <img class="h-12 mx-auto mb-4" src="https://img.icons8.com/?size=512&id=GEwnpUHOxl4r&format=png" alt="Otter.ai Logo">
                         <h4 class="font-bold text-lg text-white">Otter AI</h4>
                         <p class="text-slate-300 text-base mt-2">使用 Otter.ai 快速分析逐字稿重點，發覺顧客對話中潛在意涵，生成痛點摘要報告，並結合ChatGPT產生追問建議與下一步建議行動。</p>
                     </div>
                     <div class="bg-slate-800 border border-slate-700 rounded-lg p-8 text-center transition hover:border-cyan-500 hover:-translate-y-1">
-                         <img class="h-12 mx-auto mb-4" src="https://global-uploads.webflow.com/5ff79e449b036e35104968c2/5ff79e449b036e7893496947_gamma-logo.svg" alt="Gamma.app Logo">
+                         <img class="h-12 mx-auto mb-4" src="https://logosandtypes.com/wp-content/uploads/2024/12/gamma-app.svg" alt="Gamma.app Logo">
                         <h4 class="font-bold text-lg text-white">Gamma</h4>
                         <p class="text-slate-300 text-base mt-2">根據蒐集的洞察與價值論述，一鍵生成專業、視覺化的提案簡報，讓業務專注於溝通，而非耗時的文書工作。</p>
                     </div>
