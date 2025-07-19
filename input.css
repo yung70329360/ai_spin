@@ -29,20 +29,44 @@
 /* Component Styles */
 @layer components {
   .section-header {
-    font-size: 2.5rem;
+    font-size: 1.875rem; /* 30px */
     font-weight: 800;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: #0f172a; /* text-slate-900 */
     letter-spacing: 0.025em;
   }
   
   .section-subheader {
-    font-size: 1.25rem;
+    font-size: 1.125rem; /* 18px */
     text-align: center;
     color: #475569; /* text-slate-600 */
     max-width: 48rem;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto 2rem auto;
+  }
+  
+  @media (min-width: 640px) {
+    .section-header {
+      font-size: 2.25rem; /* 36px */
+      margin-bottom: 1.25rem;
+    }
+    
+    .section-subheader {
+      font-size: 1.25rem; /* 20px */
+      margin: 0 auto 2.5rem auto;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .section-header {
+      font-size: 2.5rem; /* 40px */
+      margin-bottom: 1.5rem;
+    }
+    
+    .section-subheader {
+      font-size: 1.25rem; /* 20px */
+      margin: 0 auto 3rem auto;
+    }
   }
   
   .accent-gradient-text {
@@ -95,20 +119,32 @@
   }
   
   .custom-table th, .custom-table td {
-    padding: 1rem 1.5rem;
+    padding: 0.75rem 1rem;
     text-align: left;
     border-bottom: 1px solid #e2e8f0;
+    font-size: 0.875rem; /* 14px */
   }
   
   .custom-table th {
     background-color: #f1f5f9; /* bg-slate-100 */
     font-weight: 600;
     color: #0f172a;
-    font-size: 1.125rem; /* Unified font size */
+    font-size: 1rem; /* 16px */
   }
   
   .custom-table td {
     color: #334155; /* text-slate-700 */
+  }
+  
+  @media (min-width: 640px) {
+    .custom-table th, .custom-table td {
+      padding: 1rem 1.5rem;
+      font-size: 1rem; /* 16px */
+    }
+    
+    .custom-table th {
+      font-size: 1.125rem; /* 18px */
+    }
   }
   
   .custom-table tbody tr:last-child td {
