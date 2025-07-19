@@ -29,20 +29,20 @@
 /* Component Styles */
 @layer components {
   .section-header {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.875rem; /* 30px */
     font-weight: 800;
     text-align: center;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
     color: #0f172a; /* text-slate-900 */
     letter-spacing: 0.025em;
   }
   
   .section-subheader {
-    font-size: 1rem; /* 16px */
+    font-size: 1.125rem; /* 18px */
     text-align: center;
     color: #475569; /* text-slate-600 */
     max-width: 48rem;
-    margin: 0 auto 1.5rem auto;
+    margin: 0 auto 2rem auto;
   }
   
   @media (min-width: 640px) {
@@ -129,6 +129,7 @@
     text-align: left;
     border-bottom: 1px solid #e2e8f0;
     font-size: 0.75rem; /* 12px */
+    line-height: 1.4;
   }
   
   .custom-table th {
@@ -143,6 +144,17 @@
   }
   
   @media (min-width: 640px) {
+    .custom-table th, .custom-table td {
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem; /* 14px */
+    }
+    
+    .custom-table th {
+      font-size: 1rem; /* 16px */
+    }
+  }
+  
+  @media (min-width: 1024px) {
     .custom-table th, .custom-table td {
       padding: 1rem 1.5rem;
       font-size: 1rem; /* 16px */

@@ -577,24 +577,24 @@ p, li, td, blockquote {
 }
 
 .section-header {
-  font-size: 1.5rem;
-  /* 24px */
+  font-size: 1.875rem;
+  /* 30px */
   font-weight: 800;
   text-align: center;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   color: #0f172a;
   /* text-slate-900 */
   letter-spacing: 0.025em;
 }
 
 .section-subheader {
-  font-size: 1rem;
-  /* 16px */
+  font-size: 1.125rem;
+  /* 18px */
   text-align: center;
   color: #475569;
   /* text-slate-600 */
   max-width: 48rem;
-  margin: 0 auto 1.5rem auto;
+  margin: 0 auto 2rem auto;
 }
 
 @media (min-width: 640px) {
@@ -690,6 +690,7 @@ p, li, td, blockquote {
   border-bottom: 1px solid #e2e8f0;
   font-size: 0.75rem;
   /* 12px */
+  line-height: 1.4;
 }
 
 .custom-table th {
@@ -707,6 +708,19 @@ p, li, td, blockquote {
 }
 
 @media (min-width: 640px) {
+  .custom-table th, .custom-table td {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    /* 14px */
+  }
+
+  .custom-table th {
+    font-size: 1rem;
+    /* 16px */
+  }
+}
+
+@media (min-width: 1024px) {
   .custom-table th, .custom-table td {
     padding: 1rem 1.5rem;
     font-size: 1rem;
@@ -896,6 +910,10 @@ p, li, td, blockquote {
   grid-column: span 1 / span 1;
 }
 
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
 .-mx-4 {
   margin-left: -1rem;
   margin-right: -1rem;
@@ -924,12 +942,20 @@ p, li, td, blockquote {
   margin-bottom: 0.5rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
 
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .ml-10 {
@@ -942,6 +968,10 @@ p, li, td, blockquote {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .mt-2 {
@@ -1024,8 +1054,8 @@ p, li, td, blockquote {
   height: 100%;
 }
 
-.min-h-\[350px\] {
-  min-height: 350px;
+.min-h-\[450px\] {
+  min-height: 450px;
 }
 
 .w-0\.5 {
@@ -1062,10 +1092,6 @@ p, li, td, blockquote {
 
 .w-full {
   width: 100%;
-}
-
-.min-w-\[700px\] {
-  min-width: 700px;
 }
 
 .min-w-\[800px\] {
@@ -1110,6 +1136,16 @@ p, li, td, blockquote {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.translate-y-0 {
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-4 {
+  --tw-translate-y: 1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -1122,8 +1158,8 @@ p, li, td, blockquote {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.flex-row {
-  flex-direction: row;
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1166,6 +1202,10 @@ p, li, td, blockquote {
   gap: 1.5rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .gap-x-6 {
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
@@ -1199,10 +1239,16 @@ p, li, td, blockquote {
   margin-bottom: calc(4rem * var(--tw-space-y-reverse));
 }
 
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -1215,10 +1261,6 @@ p, li, td, blockquote {
 
 .scroll-smooth {
   scroll-behavior: smooth;
-}
-
-.whitespace-nowrap {
-  white-space: nowrap;
 }
 
 .rounded-2xl {
@@ -1328,16 +1370,16 @@ p, li, td, blockquote {
   padding: 0.5rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
 .p-4 {
   padding: 1rem;
 }
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-2 {
@@ -1363,6 +1405,11 @@ p, li, td, blockquote {
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .py-2 {
@@ -1747,12 +1794,12 @@ p, li, td, blockquote {
     height: 3rem;
   }
 
-  .sm\:min-h-\[450px\] {
-    min-height: 450px;
-  }
-
   .sm\:w-12 {
     width: 3rem;
+  }
+
+  .sm\:min-w-0 {
+    min-width: 0px;
   }
 
   .sm\:grid-cols-2 {
@@ -1761,6 +1808,10 @@ p, li, td, blockquote {
 
   .sm\:gap-12 {
     gap: 3rem;
+  }
+
+  .sm\:gap-6 {
+    gap: 1.5rem;
   }
 
   .sm\:gap-8 {
@@ -1780,16 +1831,6 @@ p, li, td, blockquote {
     --tw-space-y-reverse: 0;
     margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(5rem * var(--tw-space-y-reverse));
-  }
-
-  .sm\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-  }
-
-  .sm\:p-4 {
-    padding: 1rem;
   }
 
   .sm\:p-8 {
@@ -1846,18 +1887,8 @@ p, li, td, blockquote {
     line-height: 1;
   }
 
-  .sm\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
   .sm\:text-lg {
     font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .sm\:text-xl {
-    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
@@ -1904,16 +1935,20 @@ p, li, td, blockquote {
 }
 
 @media (min-width: 1024px) {
-  .lg\:col-span-3 {
-    grid-column: span 3 / span 3;
-  }
-
   .lg\:block {
     display: block;
   }
 
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:grid {
+    display: grid;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:grid-cols-3 {
@@ -1924,16 +1959,16 @@ p, li, td, blockquote {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .lg\:flex-col {
-    flex-direction: column;
-  }
-
   .lg\:items-center {
     align-items: center;
   }
 
   .lg\:gap-24 {
     gap: 6rem;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 
   .lg\:gap-x-10 {
@@ -1945,14 +1980,6 @@ p, li, td, blockquote {
     --tw-space-y-reverse: 0;
     margin-top: calc(8rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(8rem * var(--tw-space-y-reverse));
-  }
-
-  .lg\:overflow-x-visible {
-    overflow-x: visible;
-  }
-
-  .lg\:whitespace-normal {
-    white-space: normal;
   }
 
   .lg\:px-8 {
@@ -1968,15 +1995,5 @@ p, li, td, blockquote {
   .lg\:py-40 {
     padding-top: 10rem;
     padding-bottom: 10rem;
-  }
-
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 } 
