@@ -11,8 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Alpine.js for interactions -->
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script src="/dist/main.js" defer></script>
 </head>
 <body x-data>
 
@@ -21,7 +20,9 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex items-center justify-between h-16">
                 <div class="flex-shrink-0">
-                    <a href="#" class="text-lg font-bold text-cyan-700">AI SPIN 銷售法</a>
+                    <a href="https://bii.tw" target="_blank" rel="noopener" class="flex items-center">
+                        <img src="/logo.png" alt="突圍智創 Logo" class="h-8 w-auto" />
+                    </a>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-6">
@@ -64,7 +65,7 @@
                     本課程專為頂尖銷售團隊設計，將全球公認最有效的顧問式銷售法，與當代最強大的 AI 工具深度整合，打造一套可複製、可量化的高效銷售作業系統。
                 </p>
                 <div class="mt-10 flex items-center gap-x-6">
-                    <a href="#contact" class="rounded-md bg-cyan-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600 transition-all duration-300 transform hover:scale-105">預約企業內訓</a>
+                    <a href="https://bii.tw/contact" class="rounded-md bg-cyan-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600 transition-all duration-300 transform hover:scale-105">預約企業內訓</a>
                     <a href="#framework" class="text-base font-semibold leading-6 text-white">探索核心架構 <span aria-hidden="true">→</span></a>
                 </div>
             </div>
@@ -76,164 +77,168 @@
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-6 py-16 md:py-24 space-y-24 md:space-y-32">
+    <main class="py-16 md:py-24 space-y-24 md:space-y-32">
         
         <!-- Why SPIN Section -->
-        <section id="why-spin" class="fade-in-section">
-            <div class="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
-                <div class="prose-custom max-w-none space-y-6">
-                    <h2 class="text-3xl font-bold">為何在當代 B2B 銷售中，<br><span class="text-cyan-700">SPIN 依然是黃金準則？</span></h2>
-                    <p>在客戶比你更懂產品的時代，單向的產品推銷已然失效。銷售的成功關鍵，從「說了什麼」轉變為「問對了什麼」。真正的銷售精英，是客戶眼中能解決問題的顧問。</p>
-                    <blockquote>SPIN® Selling 銷售法，正是建立這種顧問式信任關係的基石。它將複雜的銷售對話，解構成四個清晰、科學的提問階段，讓客戶「自我說服」，從而大幅提高大額訂單的成交率。</blockquote>
-                </div>
-                <!-- Diagram Layout -->
-                <div class="relative">
-                     <!-- Vertical Line -->
-                    <div class="absolute left-5 top-5 h-full w-0.5 bg-slate-200 -z-10"></div>
-                    <div class="space-y-12">
-                        <!-- S Node -->
-                        <div class="flex items-start space-x-6">
-                            <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-full bg-cyan-600 text-white shadow-md">
-                                <span class="font-bold text-lg">S</span>
+        <section id="why-spin" class="fade-in-section px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
+                    <div class="prose-custom max-w-none space-y-6">
+                        <h2 class="text-3xl font-bold">為何在當代 B2B 銷售中，<br><span class="text-cyan-700">SPIN 依然是黃金準則？</span></h2>
+                        <p>在客戶比你更懂產品的時代，單向的產品推銷已然失效。銷售的成功關鍵，從「說了什麼」轉變為「問對了什麼」。真正的銷售精英，是客戶眼中能解決問題的顧問。</p>
+                        <blockquote>SPIN® Selling 銷售法，正是建立這種顧問式信任關係的基石。它將複雜的銷售對話，解構成四個清晰、科學的提問階段，讓客戶「自我說服」，從而大幅提高大額訂單的成交率。</blockquote>
+                    </div>
+                    <!-- Diagram Layout -->
+                    <div class="relative">
+                         <!-- Vertical Line -->
+                        <div class="absolute left-5 top-5 h-full w-0.5 bg-slate-200 -z-10"></div>
+                        <div class="space-y-12">
+                            <!-- S Node -->
+                            <div class="flex items-start space-x-6">
+                                <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-full bg-cyan-600 text-white shadow-md">
+                                    <span class="font-bold text-lg">S</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-slate-800">Situation (背景情境)</h4>
+                                    <p class="text-slate-600 mt-1">了解客戶的現狀與作業背景，建立對話基礎。</p>
+                                </div>
                             </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-slate-800">Situation (背景情境)</h4>
-                                <p class="text-slate-600 mt-1">了解客戶的現狀與作業背景，建立對話基礎。</p>
+                            <!-- P Node -->
+                            <div class="flex items-start space-x-6">
+                                <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-full bg-cyan-600 text-white shadow-md">
+                                    <span class="font-bold text-lg">P</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-slate-800">Problem (問題探索)</h4>
+                                    <p class="text-slate-600 mt-1">發掘客戶流程中的困難與隱性不滿，找到切入點。</p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- P Node -->
-                        <div class="flex items-start space-x-6">
-                            <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-full bg-cyan-600 text-white shadow-md">
-                                <span class="font-bold text-lg">P</span>
+                            <!-- I Node -->
+                            <div class="flex items-start space-x-6">
+                                <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-full bg-cyan-600 text-white shadow-md">
+                                    <span class="font-bold text-lg">I</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-slate-800">Implication (擴大暗示)</h4>
+                                    <p class="text-slate-600 mt-1">引導客戶意識到問題不解決的嚴重後果，創造急迫感。</p>
+                                </div>
                             </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-slate-800">Problem (問題探索)</h4>
-                                <p class="text-slate-600 mt-1">發掘客戶流程中的困難與隱性不滿，找到切入點。</p>
-                            </div>
-                        </div>
-                        <!-- I Node -->
-                        <div class="flex items-start space-x-6">
-                            <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-full bg-cyan-600 text-white shadow-md">
-                                <span class="font-bold text-lg">I</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-slate-800">Implication (擴大暗示)</h4>
-                                <p class="text-slate-600 mt-1">引導客戶意識到問題不解決的嚴重後果，創造急迫感。</p>
-                            </div>
-                        </div>
-                        <!-- N Node -->
-                         <div class="flex items-start space-x-6">
-                            <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-full bg-cyan-600 text-white shadow-md">
-                                <span class="font-bold text-lg">N</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-slate-800">Need-Payoff (需求回報)</h4>
-                                <p class="text-slate-600 mt-1">讓客戶親口說出解決方案能帶來的價值，完成自我說服。</p>
+                            <!-- N Node -->
+                             <div class="flex items-start space-x-6">
+                                <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-full bg-cyan-600 text-white shadow-md">
+                                    <span class="font-bold text-lg">N</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-slate-800">Need-Payoff (需求回報)</h4>
+                                    <p class="text-slate-600 mt-1">讓客戶親口說出解決方案能帶來的價值，完成自我說服。</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Benefits of SPIN Section -->
-            <div class="mt-20 bg-slate-100 rounded-2xl p-8 md:p-12">
-                <h3 class="text-2xl font-bold text-center text-slate-800 mb-10">SPIN 銷售法帶來的核心效益</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="text-center">
-                        <div class="flex items-center justify-center h-14 w-14 rounded-full bg-white shadow-md border border-slate-200 mx-auto mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-cyan-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                <!-- Benefits of SPIN Section -->
+                <div class="mt-20 bg-slate-100 rounded-2xl p-8 md:p-12">
+                    <h3 class="text-2xl font-bold text-center text-slate-800 mb-10">SPIN 銷售法帶來的核心效益</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="text-center">
+                            <div class="flex items-center justify-center h-14 w-14 rounded-full bg-white shadow-md border border-slate-200 mx-auto mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-cyan-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-800">建立一致的銷售方法</h4>
+                            <p class="text-slate-600 mt-2">建立顧問式銷售思維，讓團隊擁有可複製的成功模式。</p>
                         </div>
-                        <h4 class="text-lg font-bold text-slate-800">建立一致的銷售方法</h4>
-                        <p class="text-slate-600 mt-2">建立顧問式銷售思維，讓團隊擁有可複製的成功模式。</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="flex items-center justify-center h-14 w-14 rounded-full bg-white shadow-md border border-slate-200 mx-auto mb-4">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-cyan-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <div class="text-center">
+                            <div class="flex items-center justify-center h-14 w-14 rounded-full bg-white shadow-md border border-slate-200 mx-auto mb-4">
+                               <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-cyan-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-800">提升客戶滿意度</h4>
+                            <p class="text-slate-600 mt-2">真正聽懂客戶需求，從供應商轉變為值得信賴的合作夥伴。</p>
                         </div>
-                        <h4 class="text-lg font-bold text-slate-800">提升客戶滿意度</h4>
-                        <p class="text-slate-600 mt-2">真正聽懂客戶需求，從供應商轉變為值得信賴的合作夥伴。</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="flex items-center justify-center h-14 w-14 rounded-full bg-white shadow-md border border-slate-200 mx-auto mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-cyan-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <div class="text-center">
+                            <div class="flex items-center justify-center h-14 w-14 rounded-full bg-white shadow-md border border-slate-200 mx-auto mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-cyan-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-800">降低客戶異議</h4>
+                            <p class="text-slate-600 mt-2">透過提問引導，在異議產生前就化解疑慮，讓成交過程更順暢。</p>
                         </div>
-                        <h4 class="text-lg font-bold text-slate-800">降低客戶異議</h4>
-                        <p class="text-slate-600 mt-2">透過提問引導，在異議產生前就化解疑慮，讓成交過程更順暢。</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="flex items-center justify-center h-14 w-14 rounded-full bg-white shadow-md border border-slate-200 mx-auto mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-cyan-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <div class="text-center">
+                            <div class="flex items-center justify-center h-14 w-14 rounded-full bg-white shadow-md border border-slate-200 mx-auto mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-cyan-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-800">縮短銷售週期</h4>
+                            <p class="text-slate-600 mt-2">精準定位決策者與需求，加速成交過程，提升業績效率。</p>
                         </div>
-                        <h4 class="text-lg font-bold text-slate-800">縮短銷售週期</h4>
-                        <p class="text-slate-600 mt-2">精準定位決策者與需求，加速成交過程，提升業績效率。</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Pain vs Gain Section -->
-        <section id="pain-gain" class="fade-in-section">
-            <h2 class="section-header">結合AI，解決您的銷售困境</h2>
-            <p class="section-subheader">我們將傳統銷售的四大痛點，轉化為 AI 賦能的四大收益。</p>
-            <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Card 1 -->
-                <div class="pain-gain-card">
-                    <div>
-                        <p class="font-bold text-rose-600">困境一：</p>
-                        <p class="mt-1 text-slate-800 font-bold text-lg leading-snug">客戶聊完沒感覺，總說「我們再想想」</p>
+        <section id="pain-gain" class="fade-in-section px-6">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="section-header">結合AI，解決您的銷售困境</h2>
+                <p class="section-subheader">我們將傳統銷售的四大痛點，轉化為 AI 賦能的四大收益。</p>
+                <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1 -->
+                    <div class="pain-gain-card">
+                        <div>
+                            <p class="font-bold text-rose-600">困境一：</p>
+                            <p class="mt-1 text-slate-800 font-bold text-lg leading-snug">客戶聊完沒感覺，總說「我們再想想」</p>
+                        </div>
+                        <div class="flex-grow my-4 border-t border-slate-200"></div>
+                        <div>
+                            <p class="font-bold text-cyan-700">本課程提供：</p>
+                            <p class="mt-1 text-slate-600 text-base">一套可複製的「SPIN 提問模型」，透過精準提問，引導客戶自行說出需求與價值，建立真正的連結。</p>
+                        </div>
                     </div>
-                    <div class="flex-grow my-4 border-t border-slate-200"></div>
-                    <div>
-                        <p class="font-bold text-cyan-700">本課程提供：</p>
-                        <p class="mt-1 text-slate-600 text-base">一套可複製的「SPIN 提問模型」，透過精準提問，引導客戶自行說出需求與價值，建立真正的連結。</p>
+                     <!-- Card 2 -->
+                    <div class="pain-gain-card">
+                        <div>
+                            <p class="font-bold text-rose-600">困境二：</p>
+                            <p class="mt-1 text-slate-800 font-bold text-lg leading-snug">會議記錄繁雜，不知如何轉換成成交關鍵</p>
+                        </div>
+                        <div class="flex-grow my-4 border-t border-slate-200"></div>
+                        <div>
+                            <p class="font-bold text-cyan-700">本課程提供：</p>
+                            <p class="mt-1 text-slate-600 text-base">一套「從逐字稿到提案」的 AI 工作流，自動分析對話，標記痛點，將雜亂資訊轉化為致勝洞察。</p>
+                        </div>
                     </div>
-                </div>
-                 <!-- Card 2 -->
-                <div class="pain-gain-card">
-                    <div>
-                        <p class="font-bold text-rose-600">困境二：</p>
-                        <p class="mt-1 text-slate-800 font-bold text-lg leading-snug">會議記錄繁雜，不知如何轉換成成交關鍵</p>
+                     <!-- Card 3 -->
+                    <div class="pain-gain-card">
+                        <div>
+                            <p class="font-bold text-rose-600">困境三：</p>
+                            <p class="mt-1 text-slate-800 font-bold text-lg leading-snug">想做顧問式銷售，卻不懂如何有效提問</p>
+                        </div>
+                        <div class="flex-grow my-4 border-t border-slate-200"></div>
+                        <div>
+                            <p class="font-bold text-cyan-700">本課程提供：</p>
+                            <p class="mt-1 text-slate-600 text-base">SPIN 銷售法的系統性訓練，讓您的團隊掌握顧問式銷售的核心精髓：問對問題，而非滔滔不絕。</p>
+                        </div>
                     </div>
-                    <div class="flex-grow my-4 border-t border-slate-200"></div>
-                    <div>
-                        <p class="font-bold text-cyan-700">本課程提供：</p>
-                        <p class="mt-1 text-slate-600 text-base">一套「從逐字稿到提案」的 AI 工作流，自動分析對話，標記痛點，將雜亂資訊轉化為致勝洞察。</p>
-                    </div>
-                </div>
-                 <!-- Card 3 -->
-                <div class="pain-gain-card">
-                    <div>
-                        <p class="font-bold text-rose-600">困境三：</p>
-                        <p class="mt-1 text-slate-800 font-bold text-lg leading-snug">想做顧問式銷售，卻不懂如何有效提問</p>
-                    </div>
-                    <div class="flex-grow my-4 border-t border-slate-200"></div>
-                    <div>
-                        <p class="font-bold text-cyan-700">本課程提供：</p>
-                        <p class="mt-1 text-slate-600 text-base">SPIN 銷售法的系統性訓練，讓您的團隊掌握顧問式銷售的核心精髓：問對問題，而非滔滔不絕。</p>
-                    </div>
-                </div>
-                 <!-- Card 4 -->
-                <div class="pain-gain-card">
-                    <div>
-                        <p class="font-bold text-rose-600">困境四：</p>
-                        <p class="mt-1 text-slate-800 font-bold text-lg leading-snug">想導入 AI 提升效率，卻找不到實際方法</p>
-                    </div>
-                    <div class="flex-grow my-4 border-t border-slate-200"></div>
-                    <div>
-                        <p class="font-bold text-cyan-700">本課程提供：</p>
-                        <p class="mt-1 text-slate-600 text-base">一套能馬上上手的 AI 工具應用方法，將抽象的 AI 概念，轉化為銷售流程中具體、可執行的步驟。</p>
+                     <!-- Card 4 -->
+                    <div class="pain-gain-card">
+                        <div>
+                            <p class="font-bold text-rose-600">困境四：</p>
+                            <p class="mt-1 text-slate-800 font-bold text-lg leading-snug">想導入 AI 提升效率，卻找不到實際方法</p>
+                        </div>
+                        <div class="flex-grow my-4 border-t border-slate-200"></div>
+                        <div>
+                            <p class="font-bold text-cyan-700">本課程提供：</p>
+                            <p class="mt-1 text-slate-600 text-base">一套能馬上上手的 AI 工具應用方法，將抽象的 AI 概念，轉化為銷售流程中具體、可執行的步驟。</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Framework Section -->
-        <section id="framework" class="fade-in-section bg-slate-800 py-20 sm:py-24">
+        <section id="framework" class="w-full bg-slate-800 py-20 sm:py-24">
             <div class="max-w-7xl mx-auto px-6">
                 <h2 class="section-header text-white">課程設計核心架構｜<span class="accent-gradient-text-dark">SPIN × AI 工具</span></h2>
                 <p class="section-subheader text-slate-300">我們將 SPIN 的四個經典階段，注入對應的 AI 工具，打造一套可複製、高效的銷售作業系統。</p>
                 <div class="mt-12" x-data="{ tableId: 'spin-ai-matrix', highlightedRow: 1 }" x-init="setInterval(() => { highlightedRow = (highlightedRow % 4) + 1 }, 3000)">
                     <div class="overflow-x-auto">
-                        <table class="w-full border-collapse" :id="tableId">
+                        <table class="w-full border-collapse min-w-[700px] text-sm sm:text-base" :id="tableId">
                             <thead>
                                 <tr>
                                     <th class="p-4 text-left font-semibold text-white border-b border-slate-600">SPIN 銷售階段</th>
@@ -304,10 +309,10 @@
             </div>
         </section>
 
-        <section id="teaching-method" class="fade-in-section">
-            <div class="max-w-7xl mx-auto px-6">
-                <h2 class="section-header">讓AI成為銷售人員的利器</h2>
-                <p class="section-subheader">三大教學基石，四大關鍵成果，每位學員都將帶著可立即應用的AI實戰武器離開。</p>
+        <section id="teaching-method" class="fade-in-section sm:px-6">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="section-header px-6 sm:px-0">讓AI成為銷售人員的利器</h2>
+                <p class="section-subheader px-6 sm:px-0">三大教學基石，四大關鍵成果，每位學員都將帶著可立即應用的AI實戰武器離開。</p>
                 <div class="mt-12 bg-slate-100 p-8 md:p-12 rounded-2xl">
                     <!-- Step 1: Principles -->
                     <div class="text-center mb-12">
@@ -347,19 +352,19 @@
                          <h3 class="text-2xl font-bold text-slate-800">四大教學成果</h3>
                     </div>
                     <div class="overflow-x-auto">
-                        <table class="custom-table">
+                        <table class="custom-table min-w-[600px] text-sm sm:text-base" id="versions-table">
                             <thead>
                                 <tr>
-                                    <th>階段</th>
+                                    <th class="w-12 sm:w-16 whitespace-nowrap">階段</th>
                                     <th>學習目標成果</th>
                                     <th>實際可應用情境</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><td class="font-semibold text-cyan-700">S</td><td>能使用 AI 工具快速掌握產業現況與客戶背景，整理出拜訪前的關鍵資訊摘要。</td><td>客戶初次拜訪前的準備：了解產業趨勢、潛在痛點與關鍵人角色</td></tr>
-                                <tr><td class="font-semibold text-cyan-700">P</td><td>能從客戶語句中抓出潛在問題、角色利益與需求線索，並使用 AI 工具協助產出有效的追問話術。</td><td>- 拜訪中對話紀錄整理：從錄音轉文字後快速找痛點<br>- 拜訪後內部檢討會議，判斷客戶的真正關鍵問題</td></tr>
-                                <tr><td class="font-semibold text-cyan-700">I</td><td>能設計「後果型」提問，並透過 AI 工具模擬風險情境與損失金額，提升價值說服力。</td><td>- 能以數據闡述「不改變會有什麼損失」<br>- 製作提案簡報前說服內部預算決策者</td></tr>
-                                <tr><td class="font-semibold text-cyan-700">N</td><td>能將痛點轉化為價值說明，並用 AI 工具產出提案簡報與口語化說服語句。</td><td>提案會議或簡報展示時，讓客戶清楚理解價值與效益</td></tr>
+                                <tr><td class="w-12 sm:w-16 font-semibold text-cyan-700 whitespace-nowrap">S</td><td>能使用 AI 工具快速掌握產業現況與客戶背景，整理出拜訪前的關鍵資訊摘要。</td><td>客戶初次拜訪前的準備：了解產業趨勢、潛在痛點與關鍵人角色</td></tr>
+                                <tr><td class="w-12 sm:w-16 font-semibold text-cyan-700 whitespace-nowrap">P</td><td>能從客戶語句中抓出潛在問題、角色利益與需求線索，並使用 AI 工具協助產出有效的追問話術。</td><td>- 拜訪中對話紀錄整理：從錄音轉文字後快速找痛點<br>- 拜訪後內部檢討會議，判斷客戶的真正關鍵問題</td></tr>
+                                <tr><td class="w-12 sm:w-16 font-semibold text-cyan-700 whitespace-nowrap">I</td><td>能設計「後果型」提問，並透過 AI 工具模擬風險情境與損失金額，提升價值說服力。</td><td>- 能以數據闡述「不改變會有什麼損失」<br>- 製作提案簡報前說服內部預算決策者</td></tr>
+                                <tr><td class="w-12 sm:w-16 font-semibold text-cyan-700 whitespace-nowrap">N</td><td>能將痛點轉化為價值說明，並用 AI 工具產出提案簡報與口語化說服語句。</td><td>提案會議或簡報展示時，讓客戶清楚理解價值與效益</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -367,8 +372,8 @@
             </div>
         </section>
 
-        <section id="syllabus" class="fade-in-section">
-            <div class="max-w-7xl mx-auto px-6">
+        <section id="syllabus" class="fade-in-section px-6">
+            <div class="max-w-7xl mx-auto">
                 <h2 class="section-header">課程大綱：從理論到<span class="accent-gradient-text">實戰輸出</span>的完整路徑</h2>
                 <p class="section-subheader">本課程採模組化設計，確保理論與實戰緊密結合，每一單元皆有明確的「實戰輸出」。</p>
                 <div class="mt-12" x-data="{ activeTab: 1 }">
@@ -446,8 +451,8 @@
             </div>
         </section>
 
-        <section id="outcomes" class="fade-in-section">
-            <div class="max-w-7xl mx-auto px-6">
+        <section id="outcomes" class="fade-in-section px-6">
+            <div class="max-w-7xl mx-auto">
                 <div class="space-y-16">
                     <div>
                         <h2 class="text-3xl font-bold text-slate-900 mb-6 text-center">適合對象</h2>
@@ -489,11 +494,11 @@
             </div>
         </section>
 
-        <section id="contact" class="fade-in-section">
-            <div class="max-w-7xl mx-auto px-6">
+        <section id="contact" class="fade-in-section px-6">
+            <div class="max-w-7xl mx-auto">
                 <div class="relative py-20 overflow-hidden bg-slate-800 rounded-2xl">
                     <div class="max-w-4xl mx-auto px-6 text-center">
-                        <h2 class="text-3xl font-extrabold text-white">結語：這不只是學會 AI，而是強化你的<span class="accent-gradient-text">成交影響力</span></h2>
+                        <h2 class="text-3xl font-extrabold text-white">這不只是學會 AI，而是強化你的<span class="accent-gradient-text">成交影響力</span></h2>
                         <p class="mt-6 max-w-2xl mx-auto text-lg text-slate-300">我們相信業務最強的能力，不是背產品規格，而是能聽出問題、放大後果、說出價值、提出解法。AI 是讓這一切「更有效、更快速、更具說服力」的助力。</p>
                         <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-300">若你正在尋找一門能馬上落地、直接提升業績能力的課程，這將是極具回報的選擇。</p>
                         <div class="mt-10">
@@ -507,7 +512,7 @@
             </div>
         </section>
 
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-white border-t border-slate-200">
